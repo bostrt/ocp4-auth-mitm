@@ -14,6 +14,9 @@ $ wget https://github.com/bostrt/ocp4-auth-mitm/raw/master/ocp-auth-mitm.zip
 Create the following resources and initiate port forward so you can access the mitmproxy web interface:
 
 ~~~
+$ cd /tmp
+$ wget https://github.com/bostrt/ocp4-auth-mitm/raw/master/ocp-auth-mitm.zip
+$ unzip ocp-auth-mitm.zip
 $ oc new-project mitmproxy; oc project mitmproxy
 $ oc create -f resources/mitm-pod.yaml
 $ oc create -f resources/mitm-service.yaml
