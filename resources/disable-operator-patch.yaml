@@ -1,0 +1,8 @@
+- op: add
+  path: /spec/overrides
+  value:
+  - kind: Deployment
+    group: extensions/v1beta1
+    name: authentication-operator
+    namespace: openshift-authentication-operator
+    unmanaged: true

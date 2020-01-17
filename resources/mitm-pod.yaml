@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mitmproxy
+  labels:
+    app: mitmproxy
+spec:
+  containers:
+  - name: mitmproxy
+    image: docker.io/mitmproxy/mitmproxy
+    command: ["mitmweb"]
+    args: ["--web-iface", "0.0.0.0", "--ssl-insecure"]
