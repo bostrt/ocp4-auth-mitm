@@ -2,7 +2,11 @@
 
 Below are steps on how to integrate the [MITMProxy](https://mitmproxy.org) with OpenShift 4.x. This can be a useful guide for troubleshooting issues when communicating with external authentication providers.
 
-Download the files used in this article here: 
+Download the files used in this article [here](https://github.com/bostrt/ocp4-auth-mitm/raw/master/ocp-auth-mitm.zip):
+
+~~~
+$ wget https://github.com/bostrt/ocp4-auth-mitm/raw/master/ocp-auth-mitm.zip
+~~~
 
 ### Create Project, Pod, and Service
 Create the following resources and initiate port forward so you can access the mitmproxy web interface:
