@@ -9,4 +9,4 @@ spec:
   - name: mitmproxy
     image: docker.io/mitmproxy/mitmproxy
     command: ["mitmweb"]
-    args: ["--web-host", "0.0.0.0", "--ssl-insecure"]
+    args: ["--listen-host", "0.0.0.0", "--ssl-insecure"]
